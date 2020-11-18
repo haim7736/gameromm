@@ -53,7 +53,7 @@ public class Cameramove : MonoBehaviour
                 break;
             case 1:
                 cam.transform.position = new Vector3(22.03f, 0, -10);
-                a.text = "2동 로비";
+                a.text = "2동 1층 로비";
                 break;
             case 2:
                 cam.transform.position = new Vector3(43.83f, 0, -10);
@@ -89,7 +89,7 @@ public class Cameramove : MonoBehaviour
                 break;
             case 10:
                 cam.transform.position = new Vector3(65.58f, 12, -10);
-                a.text = "1동 로비";
+                a.text = "1동 1층 로비";
                 break;
         }
     }
