@@ -13,7 +13,7 @@ public class Music : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        backVol = PlayerPrefs.GetFloat("backvol", 1f);
+        backVol = PlayerPrefs.GetFloat("backvol", 0.05f);
         backVolume.value = backVol;
         audio.volume = backVolume.value;
     }

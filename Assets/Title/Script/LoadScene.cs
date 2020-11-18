@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    public void LOingame()
+    private void Update()
     {
-        SceneManager.LoadScene("Ingame");
-    }
-
-    public void Qugame()
-    {
-        Debug.Log("종료");
-        Application.Quit();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Ingame");
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("종료");
+            Application.Quit();
+        }
     }
 }
