@@ -27,7 +27,7 @@ public class Cameramove : MonoBehaviour
     void Update()
     {
         
-        if(check == 1)
+        if(check == 2)
         {
             upbutton.SetActive(true);
         }
@@ -49,27 +49,27 @@ public class Cameramove : MonoBehaviour
         {
             case 0:
                 cam.transform.position = new Vector3(0, 0, -10);
-                a.text = "입원실";
+                a.text = "101호 입원실";
                 break;
             case 1:
                 cam.transform.position = new Vector3(22.03f, 0, -10);
-                a.text = "로비";
+                a.text = "2동 로비";
                 break;
             case 2:
                 cam.transform.position = new Vector3(43.83f, 0, -10);
-                a.text = "계단";
+                a.text = "2동 계단";
                 break;
             case 3:
                 cam.transform.position = new Vector3(65.58f, 0, -10);
-                a.text = "복도";
+                a.text = "2동 지하1층 복도";
                 break;
             case 4:
                 cam.transform.position = new Vector3(0, -12, -10);
-                a.text = "조제실";
+                a.text = "2동 조제실";
                 break;
             case 5:
                 cam.transform.position = new Vector3(22.03f, -12, -10);
-                a.text = "창고";
+                a.text = "2동 창고";
                 break;
             case 6:
                 cam.transform.position = new Vector3(43.83f, -12, -10);
@@ -81,7 +81,7 @@ public class Cameramove : MonoBehaviour
                 break;
             case 8:
                 cam.transform.position = new Vector3(22.03f, 12, -10);
-                a.text = "1동 복도";
+                a.text = "1동 가는길";
                 break;
             case 9:
                 cam.transform.position = new Vector3(43.83f, 12, -10);
@@ -141,6 +141,6 @@ public class Cameramove : MonoBehaviour
     {
         Debug.Log("C");
         building = true;
-        check = 1;
+        check = 2;
     }
 }
